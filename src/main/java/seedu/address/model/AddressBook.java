@@ -90,6 +90,15 @@ public class AddressBook implements ReadOnlyAddressBook {
     }
 
     /**
+     * Returns true if the list of events is empty.
+     *
+     * @return The boolean result of whether the list of events is empty.
+     */
+    public boolean isEventListEmpty() {
+        return events.isEmpty();
+    }
+
+    /**
      * Adds an event to the address book.
      * The event must not already exist in the address book.
      */

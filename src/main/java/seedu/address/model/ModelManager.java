@@ -144,6 +144,11 @@ public class ModelManager implements Model {
     }
 
     @Override
+    public boolean isEventsEmpty() {
+        return addressBook.isEventListEmpty();
+    }
+
+    @Override
     public void addEvent(Event event) {
         updateFilteredEventList(PREDICATE_SHOW_ALL_EVENTS);
         addressBook.addEvent(event);

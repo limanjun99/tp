@@ -130,6 +130,13 @@ public interface Model {
     boolean hasEvent(Event event);
 
     /**
+     * Returns true if the address book has no events.
+     *
+     * @return The boolean result of whether the address book has no events.
+     */
+    boolean isEventsEmpty();
+
+    /**
      * Adds the given event.
      * {@code event} must not already exist in the address book.
      */

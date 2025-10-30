@@ -134,6 +134,11 @@ public class ModelStub implements Model {
     }
 
     @Override
+    public boolean isEventsEmpty() {
+        throw new AssertionError("This method should not be called.");
+    }
+
+    @Override
     public void clearEvent() {
         throw new AssertionError("This method should not be called.");
     }
